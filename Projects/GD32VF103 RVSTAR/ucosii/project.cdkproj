@@ -2,7 +2,7 @@
 <Project Name="project" Version="1" Language="CPP" Type="Simple">
   <Description/>
   <VendorInfo>
-    <VendorName>new_psf_project_Nuclei-SDK(V0.3.8)_LILYGO_TTGO_N205_ucosii</VendorName>
+    <VendorName>new_psf_project_Nuclei-SDK(V0.3.8)_GD32VF103_RVSTAR_ucosii</VendorName>
   </VendorInfo>
   <VirtualDirectory Name="application">
     <File Name="../../../application/ucosii/demo/app_cfg.h">
@@ -76,28 +76,28 @@
     <VirtualDirectory Name="SoC">
       <VirtualDirectory Name="gd32vf103">
         <VirtualDirectory Name="Board">
-          <VirtualDirectory Name="gd32vf103c_t_display">
+          <VirtualDirectory Name="gd32vf103v_rvstar">
             <VirtualDirectory Name="Include">
-              <File Name="../../../SoC/gd32vf103/Board/gd32vf103c_t_display/Include/gd32vf103c_t_display.h">
+              <File Name="../../../SoC/gd32vf103/Board/gd32vf103v_rvstar/Include/gd32vf103v_rvstar.h">
                 <FileOption/>
               </File>
-              <File Name="../../../SoC/gd32vf103/Board/gd32vf103c_t_display/Include/nuclei_sdk_hal.h">
+              <File Name="../../../SoC/gd32vf103/Board/gd32vf103v_rvstar/Include/nuclei_sdk_hal.h">
                 <FileOption/>
               </File>
             </VirtualDirectory>
-            <File Name="../../../SoC/gd32vf103/Board/gd32vf103c_t_display/npk.yml">
+            <File Name="../../../SoC/gd32vf103/Board/gd32vf103v_rvstar/npk.yml">
               <FileOption/>
             </File>
-            <File Name="../../../SoC/gd32vf103/Board/gd32vf103c_t_display/openocd_gd32vf103.cfg">
+            <File Name="../../../SoC/gd32vf103/Board/gd32vf103v_rvstar/openocd_gd32vf103.cfg">
               <FileOption/>
             </File>
             <VirtualDirectory Name="Source">
               <VirtualDirectory Name="GCC">
-                <File Name="../../../SoC/gd32vf103/Board/gd32vf103c_t_display/Source/GCC/gcc_gd32vf103_flashxip.ld">
+                <File Name="../../../SoC/gd32vf103/Board/gd32vf103v_rvstar/Source/GCC/gcc_gd32vf103_flashxip.ld">
                   <FileOption/>
                 </File>
               </VirtualDirectory>
-              <File Name="../../../SoC/gd32vf103/Board/gd32vf103c_t_display/Source/gd32vf103c_t_display.c">
+              <File Name="../../../SoC/gd32vf103/Board/gd32vf103v_rvstar/Source/gd32vf103v_rvstar.c">
                 <FileOption/>
               </File>
             </VirtualDirectory>
@@ -523,7 +523,7 @@
         <Undefine/>
         <Optim>Optimize (-Og)</Optim>
         <DebugLevel>Default (-g)</DebugLevel>
-        <IncludePath>../../../OS/UCOSII/arch;../../../OS/UCOSII/source;../../../NMSIS/Core/Include;../../../SoC/gd32vf103/Board/gd32vf103c_t_display/Include;../../../SoC/gd32vf103/Common/Include;../../../application/ucosii/demo</IncludePath>
+        <IncludePath>../../../OS/UCOSII/arch;../../../OS/UCOSII/source;../../../NMSIS/Core/Include;../../../SoC/gd32vf103/Board/gd32vf103v_rvstar/Include;../../../SoC/gd32vf103/Common/Include;../../../application/ucosii/demo</IncludePath>
         <OtherFlags>-mcmodel=medany -mno-save-restore  -fno-common --specs=nano.specs --specs=nosys.specs</OtherFlags>
         <Verbose>no</Verbose>
         <Ansi>no</Ansi>
@@ -540,14 +540,14 @@
       <Asm>
         <Define>__IDE_RV_CORE=n205;SYSTEM_CLOCK=108000000;SYSCLK_USING_HXTAL;DOWNLOAD_MODE=DOWNLOAD_MODE_FLASHXIP;DOWNLOAD_MODE_STRING="FLASHXIP";RTOS_UCOSII</Define>
         <Undefine/>
-        <IncludePath>../../../OS/UCOSII/arch;../../../OS/UCOSII/source;../../../NMSIS/Core/Include;../../../SoC/gd32vf103/Board/gd32vf103c_t_display/Include;../../../SoC/gd32vf103/Common/Include;../../../application/ucosii/demo</IncludePath>
+        <IncludePath>../../../OS/UCOSII/arch;../../../OS/UCOSII/source;../../../NMSIS/Core/Include;../../../SoC/gd32vf103/Board/gd32vf103v_rvstar/Include;../../../SoC/gd32vf103/Common/Include;../../../application/ucosii/demo</IncludePath>
         <OtherFlags>-mcmodel=medany -mno-save-restore -fno-common -x assembler-with-cpp --specs=nano.specs --specs=nosys.specs</OtherFlags>
         <DebugLevel>gdwarf2</DebugLevel>
       </Asm>
       <Linker>
         <Garbage>yes</Garbage>
         <Garbage2>yes</Garbage2>
-        <LDFile>$(ProjectPath)/../../../SoC/gd32vf103/Board/gd32vf103c_t_display/Source/GCC/gcc_gd32vf103_flashxip.ld</LDFile>
+        <LDFile>$(ProjectPath)/../../../SoC/gd32vf103/Board/gd32vf103v_rvstar/Source/GCC/gcc_gd32vf103_flashxip.ld</LDFile>
         <LibName>nmsis_dsp_rv32imac;
 m;stdc++</LibName>
         <LibPath>../../../NMSIS/Library/DSP/GCC</LibPath>
@@ -610,7 +610,7 @@ m;stdc++</LibName>
           <OpenOCDTelnetPort>4444</OpenOCDTelnetPort>
           <OpenOCDTclPortEnable>no</OpenOCDTclPortEnable>
           <OpenOCDTclPort>6666</OpenOCDTclPort>
-          <OpenOCDConfigOptions>-f ../../../SoC/gd32vf103/Board/gd32vf103c_t_display/openocd_gd32vf103.cfg</OpenOCDConfigOptions>
+          <OpenOCDConfigOptions>-f ../../../SoC/gd32vf103/Board/gd32vf103v_rvstar/openocd_gd32vf103.cfg</OpenOCDConfigOptions>
           <OpenOCDTimeout>5000</OpenOCDTimeout>
           <PluginID>openocd-nuclei</PluginID>
           <Version>latest</Version>
