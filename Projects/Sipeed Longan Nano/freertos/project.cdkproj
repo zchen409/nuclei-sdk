@@ -570,8 +570,7 @@
         <Garbage>yes</Garbage>
         <Garbage2>yes</Garbage2>
         <LDFile>$(ProjectPath)/../../../SoC/gd32vf103/Board/gd32vf103c_longan_nano/Source/GCC/gcc_gd32vf103xb_flashxip.ld</LDFile>
-        <LibName>nmsis_dsp_rv32imac;
-m;stdc++</LibName>
+        <LibName>stdc++</LibName>
         <LibPath>../../../NMSIS/Library/DSP/GCC</LibPath>
         <OtherFlags>-mcmodel=medany -mno-save-restore -fno-common --specs=nano.specs --specs=nosys.specs  -u _printf_float  -nostartfiles -Xlinker --gc-sections -Wl,--check-sections -u _isatty -u _write -u _sbrk -u _read -u _close -u _fstat -u _lseek</OtherFlags>
         <AutoLDFile>no</AutoLDFile>
@@ -776,8 +775,7 @@ m;stdc++</LibName>
         <Garbage>yes</Garbage>
         <Garbage2>yes</Garbage2>
         <LDFile>$(ProjectPath)/../../../SoC/gd32vf103/Board/gd32vf103c_longan_nano/Source/GCC/gcc_gd32vf103x8_flashxip.ld</LDFile>
-        <LibName>nmsis_dsp_rv32imac;
-m;stdc++</LibName>
+        <LibName>stdc++</LibName>
         <LibPath>../../../NMSIS/Library/DSP/GCC</LibPath>
         <OtherFlags>-mcmodel=medany -mno-save-restore -fno-common --specs=nano.specs --specs=nosys.specs  -u _printf_float  -nostartfiles -Xlinker --gc-sections -Wl,--check-sections -u _isatty -u _write -u _sbrk -u _read -u _close -u _fstat -u _lseek</OtherFlags>
         <AutoLDFile>no</AutoLDFile>
