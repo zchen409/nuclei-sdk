@@ -5,7 +5,7 @@
     <VendorName>new_psf_project_Nuclei-SDK(V0.3.8)_Sipeed_Longan_Nano_smphello</VendorName>
   </VendorInfo>
   <VirtualDirectory Name="application">
-    <File Name="../../../application/baremetal/helloworld/main.c">
+    <File Name="../../../application/baremetal/smphello/main.c">
       <FileOption/>
     </File>
   </VirtualDirectory>
