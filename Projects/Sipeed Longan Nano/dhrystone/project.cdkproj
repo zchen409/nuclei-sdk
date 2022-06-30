@@ -547,7 +547,7 @@
           <OpenOCDTelnetPort>4444</OpenOCDTelnetPort>
           <OpenOCDTclPortEnable>no</OpenOCDTclPortEnable>
           <OpenOCDTclPort>6666</OpenOCDTclPort>
-          <OpenOCDConfigOptions>-f "nuclei_sdk/SoC/gd32vf103/Board/gd32vf103c_longan_nano/openocd_gd32vf103.cfg"</OpenOCDConfigOptions>
+          <OpenOCDConfigOptions>-f ../../../SoC/gd32vf103/Board/gd32vf103c_longan_nano/openocd_gd32vf103.cfg</OpenOCDConfigOptions>
           <OpenOCDTimeout>5000</OpenOCDTimeout>
           <PluginID>openocd-nuclei</PluginID>
           <Version>latest</Version>
@@ -752,7 +752,7 @@
           <OpenOCDTelnetPort>4444</OpenOCDTelnetPort>
           <OpenOCDTclPortEnable>no</OpenOCDTclPortEnable>
           <OpenOCDTclPort>6666</OpenOCDTclPort>
-          <OpenOCDConfigOptions>-f "nuclei_sdk/SoC/gd32vf103/Board/gd32vf103c_longan_nano/openocd_gd32vf103.cfg"</OpenOCDConfigOptions>
+          <OpenOCDConfigOptions>-f ../../../SoC/gd32vf103/Board/gd32vf103c_longan_nano/openocd_gd32vf103.cfg</OpenOCDConfigOptions>
           <OpenOCDTimeout>5000</OpenOCDTimeout>
           <PluginID>openocd-nuclei</PluginID>
           <Version>latest</Version>
